@@ -2,6 +2,7 @@
 
 /**
  * main - tests function that prints if integer is positive or negative
+ * @void: Description of a empty parameter
  * Return: 0	
  */
 
