@@ -1,18 +1,16 @@
 #include <stdio.h>
-#include "holberton.h"
-
 /**
- * main - prints all arguments passed to the program
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - check the code for Holberton School students.
+ * @argc: The size of the argv array.
+ * @argv: An array containing the program command line arguments
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i;
+	int i = 0;
 
-	for(i = 0; i < argc; i++)
+	for (; i < argc; i++)
 		printf("%s\n", *argv++);
 	return (0);
 }
