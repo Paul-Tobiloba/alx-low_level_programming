@@ -1,16 +1,21 @@
-#include "holberton.h"
 #include <stdlib.h>
+#include "holberton.h"
 
 /**
- * free_grid - Frees a 2 dimensional array of integers.
- * @grid: dimensional array
- * @height: number of rows.
+ * free_grid - frees the memory allocate for the grid
+ * created by alloc_grid()
+ * @grid: grid to free
+ * @height: height of the grid
  */
 void free_grid(int **grid, int height)
 {
 	int i;
 
+	if (grid == NULL || height == 0)
+		return;
+
 	for (i = 0; i < height; i++)
 		free(grid[i]);
+
 	free(grid);
 }
