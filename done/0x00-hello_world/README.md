@@ -1,1 +1,0 @@
-This is my first C project as part of my ALX programming journey.
